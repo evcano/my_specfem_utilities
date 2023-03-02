@@ -1,0 +1,60 @@
+---
+# MESH INFORMATION
+# ================
+# int NPROC: Number of MPI processes.
+# list FREE_SURFACE_PROC: Processes with free surface. Enter 'null' if all processes have free surface.
+# str DATABASES_MPI: Path to DATABASES_MPI.
+NPROC: 2
+FREE_SURFACE_PROC: null
+DATABASES_MPI: '../../DATABASES_MPI'
+OUTPUT_PATH: './noise_distribution'
+
+# NOISE DIRECTION
+# ===============
+# float <X,Y,Z>DIR: Components of a unit vector indicating the noise direction.
+XDIR: 0.0
+YDIR: 0.0
+ZDIR: 1.0
+
+# NOISE DISTRIBUTIONS
+# ===================
+# list DISTRIBUTIONS: List containing dictionaries that define noise distributions (uniform, ocean, gaussian).
+# Each distribution is added to form one final distribution. Modify at your convenience.
+#
+# Available distributions:
+# uniform: Uniform noise source.
+# ocean:  Noise source only at the ocean.
+# gaussian: 2D gaussian anomaly. If utm_zone: null, set the center in the mesh coordinates, otherwise use lon/lat.
+DISTRIBUTIONS:
+  - type: 'gaussian'
+    weight: 50.0E+10
+    center_x: 0.0
+    center_y: 2160121.0
+    utm_zone: null
+    sigma_m: 150000.0
+
+# PARAMETERS TO ADD A RANDOM GAUSSIAN MASK
+ADD_RANDOM_DISTRIBUTION: true
+
+# mesh info
+XMIN: 283058.188 
+XMAX: 1003078.19
+YMIN: 1800111.12
+YMAX: 2520131.00
+
+# random gaussian field
+AMP_FACTOR: 100.0E+10
+WAVELENGHT: 100000.0
+NX: 128
+
+# dont perturb area
+DONT_PERTURB: True
+X0: 643068.1804806339
+Y0: 2160121.0842638565
+R1: 80000.0
+R2: 120000.0
+
+# FLAGS
+# =====
+PLOT_MASK: true
+WRITE_FILES: true

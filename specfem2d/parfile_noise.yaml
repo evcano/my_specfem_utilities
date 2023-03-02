@@ -1,0 +1,14 @@
+MESH_DIR: './sim_reference/OUTPUT_FILES'
+OUTPUT_DIR: './noise_model'
+
+DISTRIBUTIONS:
+  - type: 'uniform'
+    shape: 'square'
+    xmin: 0.0
+    xmax: 1110.E+3
+    zmin: -1110.E+3
+    zmax: 1110.E+3
+    taper: True
+    taper_side: 'left'
+    taper_width: 20.E+4
+    magnitude: 100.0

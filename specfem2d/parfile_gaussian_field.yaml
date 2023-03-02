@@ -1,0 +1,16 @@
+NAME: 'test_field'
+OUTPUT_DIR: './gaussian_fields'
+
+XMIN: 0.0
+XMAX: 100.0
+NX: 128
+
+ZMIN: 0.0
+ZMAX: 100.0
+NZ: 128
+
+DMEAN: 0.0
+DSTD: 0.08
+LEN_SCALE: 50
+
+ONLY_POS: False

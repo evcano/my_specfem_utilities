@@ -1,0 +1,36 @@
+MESH_NAME: 'cylinder.msh'
+
+# CENTER COORDINATES
+X: 0.0
+Y: 0.0
+
+# SQUARE
+SQUARE_SIDE: 1000.0
+SQUARE_CURVATURE: 1.2
+
+# CIRCLES
+CIRCLE_RADIUS:
+        - 2000.0
+        - 3000.0
+        - 3100.0
+
+# LAYERS DEPTH
+# THE FISRT ONE IS THE FREE SURFACE
+LAYERS_DEPTH:
+        - 0.0
+        - -500.0
+        - -1500.0
+        - -3000.0
+
+# NUMBER OF ELEMENTS
+NEL_RADIAL:
+        - 10
+        - 5
+        - 1
+
+NEL_LAYER:
+        - 5
+        - 10
+        - 2
+
+NEL_ANGULAR: 28

@@ -1,0 +1,23 @@
+DATA_DIR: './velocity_models/reference'
+OUTPUT_DIR: './velocity_models/coast'
+MODEL_PARAMETERS: ['vp', 'vs']
+
+PERTURBATIONS:
+  - type: 'gaussian'
+    shape: 'square'
+    xmin: 0.0
+    xmax: 1110.E+3
+    zmin: -1110.E+3
+    zmax: 1110.E+3
+    taper: True
+    taper_side: 'left'
+    taper_width: 20.E+4
+    gfield: './test_field.pkl'
+
+  - type: 'dont_perturb'
+    shape: 'circle'
+    x0: 500.E+3
+    z0: 0.
+    r: 300.E+3
+    taper: True
+    taper_r: 100.E+3

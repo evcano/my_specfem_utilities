@@ -1,0 +1,26 @@
+# MESH INFORMATION
+# ================
+NPROC: 1
+
+MESH_X0: 0.0
+MESH_Z0: 0.0
+
+REF_X0: 0.0
+REF_Z0: 0.0
+
+NSPEC_R: 32
+NSPEC_THETA: 64
+
+DATADIR: './OUTPUT_FILES'
+OUTPUT_PATH: './DATA'
+
+# NOISE DISTRIBUTION
+# ==================
+INTEGRATE: false
+NOISE_DISTRIBUTION: './noise_ring.output'
+RING_THICKNESS: 15000.0
+
+# FLAGS
+# =====
+PLOT_MASK: true
+WRITE_FILES: true

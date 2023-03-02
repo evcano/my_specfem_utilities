@@ -1,0 +1,34 @@
+# MESH INFORMATION
+# ================
+NPROC: 2
+FREE_SURFACE_PROC: null
+
+MESH_X0: 643068.1804806339
+MESH_Y0: 2160121.0842638565
+
+REF_X0: 643068.1804806339
+REF_Y0: 2160121.0842638565
+
+NSPEC_R: 48
+NSPEC_THETA: 192
+
+DATABASES_MPI: '../../DATABASES_MPI'
+OUTPUT_PATH: './noise_ring'
+
+# NOISE DIRECTION
+# ===============
+# float <X,Y,Z>DIR: Components of a unit vector indicating the noise direction.
+XDIR: 0.0
+YDIR: 0.0
+ZDIR: 1.0
+
+# NOISE DISTRIBUTION
+# ==================
+INTEGRATE: true
+NOISE_DISTRIBUTION: './noise_distribution'
+RING_THICKNESS: 35000.0
+
+# FLAGS
+# =====
+PLOT_MASK: true
+WRITE_FILES: true

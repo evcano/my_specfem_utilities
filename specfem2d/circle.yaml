@@ -1,0 +1,23 @@
+MESH_NAME: 'circle.msh'
+
+# CENTER COORDINATES
+X: 0.0
+Y: 0.0
+
+# SQUARE
+SQUARE_SIDE: 1000.0
+SQUARE_CURVATURE: 1.2
+
+# CIRCLES
+CIRCLE_RADIUS:
+        - 2000.0
+        - 3000.0
+        - 3100.0
+
+# NUMBER OF ELEMENTS
+NEL_RADIAL:
+        - 10
+        - 5
+        - 5
+
+NEL_ANGULAR: 64
